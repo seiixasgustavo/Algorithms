@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 public class UniqueString {
     public static Boolean isUniqueWithDS(final String str) {
-        final HashMap<Character, Boolean> memo = new HashMap<Character, Boolean>();
+        final HashMap<Character, Boolean> memo = new HashMap<>();
 
         for(final Character c : str.toCharArray()) {
             if (memo.get(c) != null) return false;
